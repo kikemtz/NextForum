@@ -90,7 +90,7 @@ public class wikiHistory extends AppCompatActivity
             startActivity(intent2);
         }  else if (id == R.id.signin) {
             Intent intent2 = new Intent(wikiHistory.this,Login.class);
-            startActivity(intent2);;
+            startActivity(intent2);
         }   else if (id == R.id.forumsettings) {
             Intent intent2 = new Intent(wikiHistory.this,forumsettings.class);
             startActivity(intent2);
