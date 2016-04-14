@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_wiki_history" tools:context="com.daavm.nextbit.wikiHistory">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Oct, 2012 Nextbit is founded!\n
+
+Jan, 2015 Baton is launched on Cyanogen with Micromax\n
+
+Sept 1, 2015 Nextbit launches a Kickstarter campiagn for the robin\n
+
+Sept 2, 2015 Nextbit reaches its first stretch goal at Kickstarter ('KS'): $500,000\n
+
+Sept 16, 2015 Nextbit duplicate its stretch goal at KS: $1M, and now a free Quick charger will be given to all backers! if $1.25M is reached a free midnight Nextbit shirt will be included and at $1.5M all backers will get 129GB of cloud storage!\n
+
+Sept 17, 2015 Now, Robin has a Verizon Compatible Version, nice news for US fans! (Out of stock)\n
+
+Sept 17, 2015 Nextbit starts a contest to get a new color for a Limited version of the Robin! #RobinColor\n
+
+Sept 23 2015 Now, Robin has a Sprint Compatible Version, More great news for US Fans!\n
+
+Sept 25, 2015 $1.25M stretch goal reached! Now t-shirts will be added to the package with the Robin and the QuickCharger! See pictures of them at the gallery!\n
+
+Oct 1, 2015 Kickstarter campaign ended! Time of hype has just started!\n
+
+Oct 21, 2015 Robin pre-orders go out at Nextbit.com! Shipping in Feb, 2016!\n"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Forum">
+        <menu>
+            <item android:id="@+id/Community" android:icon="@drawable/icon"
+                android:title="Community" />
+            <item android:id="@+id/messages" android:icon="@drawable/icon"
+                android:title="Messages" />
+            <item android:id="@+id/notifications" android:icon="@drawable/icon"
+                android:title="Notifications" />
+            <item android:id="@+id/forumsettings" android:icon="@drawable/icon"
+                android:title="My Settings" />
+            <item android:id="@+id/signin" android:icon="@drawable/icon"
+                android:title="Login Page" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item android:id="@+id/nav_wiki" android:icon="@drawable/wiki"
+                android:title="Wiki" />
+            <item android:id="@+id/store" android:icon="@drawable/icon"
+                android:title="Online Store" />
+            <item android:id="@+id/nav_discover" android:icon="@drawable/sheep"
+                android:title="Discover" />
+            <item android:id="@+id/nav_themes" android:icon="@android:drawable/ic_menu_manage"
+                android:title="Themes" />
+        </menu>
+    </item>
+</menu>

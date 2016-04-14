@@ -1,0 +1,15 @@
+<com.daavm.nextbit xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/actionButtonStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/descarga"
+    android:clickable="true"
+    android:contentDescription="bar_button" >
+
+    <TextView
+        android:id="@android:id/text1"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</com.daavm.nextbit>

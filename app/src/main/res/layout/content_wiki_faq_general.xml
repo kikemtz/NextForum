@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_wiki_faq_general" tools:context="com.daavm.nextbit.wikiFAQ_General">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:fillViewport="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Where is Robin available?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:id="@+id/textView13"
+                android:layout_below="@+id/textView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="Robin will ship to: Australia, Austria, Belgium, Bulgaria, Canada, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hong Kong, Hungary, Iceland, India, Indonesia, Ireland, Italy, Japan, Latvia, Lithuania, Luxembourg, Malaysia, Malta, Netherlands, New Zealand, Norway, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Taiwan, Thailand, UK, and US.
+At Nextbit they're working hard to make Robin more widely available; stay tuned"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView13"
+                android:textStyle="italic"
+                android:id="@+id/textView14"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="@string/RobinMap"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView14"
+                android:textStyle="italic"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:onClick="RobinMap"
+                android:id="@+id/textView15"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'What warranties apply to the phone?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView16"
+                android:layout_below="@+id/textView15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="Robin is covered by a 1-year warranty, that covers everything including manufacturing defects! The only thing it doesn't cover is physical damage."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView17"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView16"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'How long will you be supporting Robin (Android updates, security patches...)?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView18"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView17"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:text="The plan is to offer support for at least 2 years."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView19"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'How will customer service work?'"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView20"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView19"
+                android:layout_marginTop="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textIsSelectable="true"
+                android:text="There will have three service centers in US, Europe and Asia."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView21"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView20"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Questions"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="26dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

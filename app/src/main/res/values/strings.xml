@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Nextbit Robin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wiki__faq">Nextbit Robin wiki FAQ</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="RobinMap"><a href="https://www.google.com/maps/d/u/0/viewer?mid=ziOWsSVuF6UI.keexsu5ypyfw">Here you have a map of where Robin is shipping</a></string>
+    <string name="app_update"><a href="http://bit.ly/NextbitApp">Update!!</a></string>
+    <string name="banner_ad_unit_id">ca-app-pub-9587089312925809/8398543175</string>
+    <string name="banner_ad_unit_id2">ca-app-pub-9587089312925809/2711936372</string>
+
+</resources>

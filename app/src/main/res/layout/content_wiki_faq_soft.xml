@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_wiki_faq_soft" tools:context="com.daavm.nextbit.wikiFAQ_Soft">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Questions"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="26dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Will rooting or flashing another ROM void my warranty?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/textView1"
+                android:layout_below="@+id/textView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="No! As Robin comes with an unlocked bootloader and open source drivers, you can load your favorite ROM and Nextbit will still cover your phone."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView1"
+                android:id="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Does Robin record in 4K video?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="Yep! Although there was some confusion in the beginning, Robin is able to record 4K video!"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView3"
+                android:id="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Does the Robin support Camera2 API?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/textView4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="No, it does not support it. However, team developers are fine-tuning the camera to bring out the best optimization in the hardware!"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView5"
+                android:id="@+id/textView6"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Can I get root access?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/textView6"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="As Robin comes with an unlocked bootloader, yes, you can do whatever you want, but it won't be rooted out of the box."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView7"
+                android:id="@+id/textView8"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Is the phone protected from Stagefright vulnerability out of the box?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView9"
+                android:layout_below="@+id/textView8"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="Yes, and upgrading all system security patches ASAP!"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView9"
+                android:id="@+id/textView10"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'Does Robin have 'Tap to wake'' feature?'"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/textView10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="No. For locking/unlocking you can use only the power button."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView11"
+                android:id="@+id/textView12"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

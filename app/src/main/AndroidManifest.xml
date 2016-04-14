@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daavm.nextbit"
+    android:hardwareAccelerated="true">
+
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.daavm.nextbit.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.daavm.nextbit.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sheep"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="NextForum"
+            android:theme="@style/Mint">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Preferences"
+            android:label="Settings"
+            android:theme="@style/Mint"/>
+        <activity android:name=".wikiFAQ_MobNet"
+            android:label="wiki/FAQ/Mobile Networks"
+            android:theme="@style/Mint" />
+        <activity android:name=".Notifications"
+        android:label="Forum"
+        android:theme="@style/Mint" />
+        <activity android:name=".wikiHistory"
+            android:label="wiki/History"
+            android:theme="@style/Mint" />
+        <activity android:name=".Messages"
+            android:label="wiki/History"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wiki"
+            android:label="Robin wiki"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiFAQ"
+            android:label="wiki/FAQ"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiAbout"
+            android:label="wiki/About Nextbit"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".Login"
+            android:label="wiki/Login Page"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiFAQ_General"
+            android:label="wiki/FAQ/General"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiFAQ_Store"
+            android:label="wiki/FAQ/Buying and stores"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiFAQ_Cloud"
+            android:label="wiki/FAQ/Nextbit Cloud"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiFAQ_Soft"
+            android:label="wiki/FAQ/Software"
+            android:theme="@style/Mint" />
+        <activity
+            android:name=".wikiHardware"
+            android:label="wiki/Hardware Info"
+            android:theme="@style/Mint" />
+
+        <receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.daavm.nextbit" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.DefaultPushHandler" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />
+
+    </application>
+
+</manifest>
